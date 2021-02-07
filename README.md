@@ -37,11 +37,11 @@ I just wanted to make my own dashboard for my homelab and used the things i know
 ```
 
 - for <tag> use or however you like (this affect the colors of the cards):
--- "KB" Stands for: Knowledge Base and Wikis
--- "SaM" Stands for: Social networks and media
--- "WaB" Stands for: Websites and Blogs
--- "SaI" Stands for: Search and Indexing
--- "admin" Stands for: Admin tools and such
+    - "KB" Stands for: Knowledge Base and Wikis
+    - "SaM" Stands for: Social networks and media
+    - "WaB" Stands for: Websites and Blogs
+    - "SaI" Stands for: Search and Indexing
+    - "admin" Stands for: Admin tools and such
 
 - Run the python script to create your index.html
     `python main.py`
