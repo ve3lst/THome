@@ -59,5 +59,5 @@ things used here:
 
 # TO DO
 
-[] well, I just realized not everyone needs a dual langage cards. so I will try to make it flexible to pick mono-lang or dual-lang
-[] make CLI for the python script, maybe
+- [ ] well, I just realized not everyone needs a dual langage cards. so I will try to make it flexible to pick mono-lang or dual-lang
+- [ ] make CLI for the python script, maybe
