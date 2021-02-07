@@ -36,12 +36,12 @@ I just wanted to make my own dashboard for my homelab and used the things i know
 </item>
 ```
 
--- for <tag> use or however you like (this affect the colors of the cards):
---- "KB" Stands for: Knowledge Base and Wikis
---- "SaM" Stands for: Social networks and media
---- "WaB" Stands for: Websites and Blogs
---- "SaI" Stands for: Search and Indexing
---- "admin" Stands for: Admin tools and such
+- for <tag> use or however you like (this affect the colors of the cards):
+-- "KB" Stands for: Knowledge Base and Wikis
+-- "SaM" Stands for: Social networks and media
+-- "WaB" Stands for: Websites and Blogs
+-- "SaI" Stands for: Search and Indexing
+-- "admin" Stands for: Admin tools and such
 
 - Run the python script to create your index.html
     `python main.py`
@@ -50,9 +50,9 @@ I just wanted to make my own dashboard for my homelab and used the things i know
 
 # Used stuff
 things used here:
-    - HTML
-    - CSS
-    - Bootstrap & jQuery
-    - [This script for the search](https://stackoverflow.com/a/61621522)
-    - Nord Colors
-    - Python
+- HTML
+- CSS
+- Bootstrap & jQuery
+- [This script for the search](https://stackoverflow.com/a/61621522)
+- Nord Colors
+- Python
