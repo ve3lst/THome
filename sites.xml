@@ -1,0 +1,164 @@
+<!-- To add new card use this template:
+    *for <tag> use: 
+        - "KB" Stands for: Knowledge Base and Wikis
+        - "SaM" Stands for: Social networks and media 
+        - "WaB" Stands for: Websites and Blogs
+        - "SaI" Stands for: Search and Indexing
+        - "admin" Stands for: Admin tools and such
+
+    <item name = "">
+        <tag></tag>
+        <tag_text></tag_text>
+        <name></name>
+        <link></link>
+        <image_name></image_name>
+        <powered_by></powered_by>
+        <description_en></description_en>
+        <description_ar></description_ar>
+    </item>
+-->
+
+<site_items>
+    <item name = "The Wiki">
+        <tag>KB</tag>
+        <tag_text>KNB</tag_text>
+        <name>The Wiki</name>
+        <link>https://www.mediawiki.org/wiki/MediaWiki</link>
+        <image_name>mediawiki.png</image_name>
+        <powered_by>MediaWiki</powered_by>
+        <description_en>MediaWiki is a free and open-source wiki</description_en>
+        <description_ar>ميديا ويكي موسوعة مدانية ومفتوحة المصدر</description_ar>
+    </item>
+    <item name = "router">
+        <tag>admin</tag>
+        <tag_text>ADM</tag_text>
+        <name>Cisco x3500</name>
+        <link>http://192.168.1.1/</link>
+        <image_name>router.png</image_name>
+        <powered_by>Original Firmware</powered_by>
+        <description_en>Just a Router in The Network</description_en>
+        <description_ar>لوحة تحكم الراوتر</description_ar>
+    </item>
+    <item name = "phpmyadmin">
+        <tag>admin</tag>
+        <tag_text>ADM</tag_text>
+        <name>phpMyAdmin</name>
+        <link>https://www.phpmyadmin.net/</link>
+        <image_name>phpmyadmin.png</image_name>
+        <powered_by>phpMyAdmin</powered_by>
+        <description_en>Administrate MySQL over the Web</description_en>
+        <description_ar>لوحة تحكم بقواعد البيانات من المتصفح</description_ar>
+    </item>
+    <item name = "avid">
+        <tag>SaM</tag>
+        <tag_text>MED</tag_text>
+        <name>AVid</name>
+        <link>https://github.com/WWBN/AVideo</link>
+        <image_name>avid.ico</image_name>
+        <powered_by>AVideo</powered_by>
+        <description_en>Create Your Own Broadcast Network With AVideo.</description_en>
+        <description_ar>لإنشاء موقع فيديوهات</description_ar>
+    </item>
+    <item name = "Bookstack">
+        <tag>KB</tag>
+        <tag_text>KNB</tag_text>
+        <name>Bookstack</name>
+        <link>https://www.bookstackapp.com/</link>
+        <image_name>bookstack.png</image_name>
+        <powered_by>Bookstack</powered_by>
+        <description_en>Simple and Free Wiki Software</description_en>
+        <description_ar>موسوعه خفيفة وبسيطة</description_ar>
+    </item>
+    <item name = "Wordpress">
+        <tag>WaB</tag>
+        <tag_text>WEB</tag_text>
+        <name>Wordpress</name>
+        <link>https://wordpress.org/</link>
+        <image_name>wordpress.png</image_name>
+        <powered_by>Wordpress</powered_by>
+        <description_en>create a beautiful website, blog, or app.</description_en>
+        <description_ar>أنشاء موقع جميل، مدونة، أو تطبيق.</description_ar>
+    </item>
+    <item name = "veelst">
+        <tag>WaB</tag>
+        <tag_text>WEB</tag_text>
+        <name>Veelst's GH</name>
+        <link>https://github.com/ve3lst</link>
+        <image_name>VLS135.png</image_name>
+        <powered_by>GitHub</powered_by>
+        <description_en>Veelst's GitHub and stuff</description_en>
+        <description_ar>صفحة فيّلست على الغيتهب</description_ar>
+    </item>
+    <item name = "openstreetmap">
+        <tag>KB</tag>
+        <tag_text>KNB</tag_text>
+        <name>OpenStreetMap</name>
+        <link>https://www.openstreetmap.org/</link>
+        <image_name>openstreetmap.png</image_name>
+        <powered_by>OpenStreetMap</powered_by>
+        <description_en>Maps from around the world!</description_en>
+        <description_ar>خرائط من حول العالم</description_ar>
+    </item>
+    <item name = "lychee">
+        <tag>SaM</tag>
+        <tag_text>IMG</tag_text>
+        <name>Lychee</name>
+        <link>https://lycheeorg.github.io/</link>
+        <image_name>lychee.ico</image_name>
+        <powered_by>lychee</powered_by>
+        <description_en>grid and album based photo-management-system</description_en>
+        <description_ar>إستديو للصور</description_ar>
+    </item>
+    <item name = "YaCy">
+        <tag>SaI</tag>
+        <tag_text>SRC</tag_text>
+        <name>YaCy Search</name>
+        <link>https://tsearch.net/</link>
+        <image_name>YaCy.png</image_name>
+        <powered_by>YaCy</powered_by>
+        <description_en>Decentralized search engine server</description_en>
+        <description_ar>محرك بحث</description_ar>
+    </item>
+    <item name = "webmin">
+        <tag>admin</tag>
+        <tag_text>RDT</tag_text>
+        <name>Webmin</name>
+        <link>https://www.webmin.com/</link>
+        <image_name>webmin.png</image_name>
+        <powered_by>Webmin</powered_by>
+        <description_en>web-based system configuration tool for Unix-like systems</description_en>
+        <description_ar>واجهة للتحكم بأنضمة لينكس من المتصفح</description_ar>
+    </item>
+    <item name = "mail">
+        <tag>SaM</tag>
+        <tag_text>MAL</tag_text>
+        <name>Mail</name>
+        <link>http://mail.net</link>
+        <image_name>rcm.svg</image_name>
+        <powered_by>RoundCubeMail</powered_by>
+        <description_en>Browser-based IMAP client</description_en>
+        <description_ar>مدير بريد إلكتروني من المتصفح</description_ar>
+    </item>
+    <item name = "icecoder">
+        <tag>WaB</tag>
+        <tag_text>TXT</tag_text>
+        <name>ICEcoder</name>
+        <link>https://icecoder.net/</link>
+        <image_name>icecoder.png</image_name>
+        <powered_by>ICEcoder</powered_by>
+        <description_en>Code editor awesomeness ...in your browser</description_en>
+        <description_ar>محرر أكواد رائع من المتصفح مباشرة</description_ar>
+    </item>
+    <item name = "Jellyfin">
+        <tag>SaM</tag>
+        <tag_text>MEd</tag_text>
+        <name>Jellyfin</name>
+        <link>https://jellyfin.org/</link>
+        <image_name>jellyfin.png</image_name>
+        <powered_by>Emby</powered_by>
+        <description_en>Media server for audio, video, books,and photos</description_en>
+        <description_ar>ميدياسيرفر للصور والفيديو والصوتيات</description_ar>
+    </item>
+
+
+</site_items>

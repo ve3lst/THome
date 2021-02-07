@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>THome!</title>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/customize.css">    
+    <script>
+      /* my case senstive search script
+      $('.searchbox-input').on('keyup',function () {
+        $('.card').show();
+        var filter = $(this).val().toUpperCase();
+        $( ".col:not(:contains(" + filter + "))" ).css( 'display','none' );
+      });
+      */
+      //not my script tho, and its perfect! credit: https://stackoverflow.com/a/61621522
+      $(document).ready(function(){
+        $('.searchbox-input').on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $(".col").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-brand">THome</a>
+        <form class="form-inline">
+          <input class="form-control searchbox-input" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </nav>
+    </header>
+
+    <div class="cards ">
+      <div class="container">
+        <div class="row">
+
+          <div class="col">
+            <div class="card KB">
+              <a href="https://www.mediawiki.org/wiki/MediaWiki">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/mediawiki.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag KB">
+                      <strong class="tag-text">KNB</strong>
+                    </div>
+                    <p class="title KB" align="left">The Wiki</p>
+                    <p class="subtitle" id="powerdby">MediaWiki</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      MediaWiki is a free and open-source wiki
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      ميديا ويكي موسوعة مدانية ومفتوحة المصدر
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card admin">
+              <a href="http://192.168.1.1/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/router.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag admin">
+                      <strong class="tag-text">ADM</strong>
+                    </div>
+                    <p class="title admin" align="left">Cisco x3500</p>
+                    <p class="subtitle" id="powerdby">Original Firmware</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Just a Router in The Network
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      لوحة تحكم الراوتر
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card admin">
+              <a href="https://www.phpmyadmin.net/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/phpmyadmin.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag admin">
+                      <strong class="tag-text">ADM</strong>
+                    </div>
+                    <p class="title admin" align="left">phpMyAdmin</p>
+                    <p class="subtitle" id="powerdby">phpMyAdmin</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Administrate MySQL over the Web
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      لوحة تحكم بقواعد البيانات من المتصفح
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card SaM">
+              <a href="https://github.com/WWBN/AVideo">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/avid.ico" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag SaM">
+                      <strong class="tag-text">MED</strong>
+                    </div>
+                    <p class="title SaM" align="left">AVid</p>
+                    <p class="subtitle" id="powerdby">AVideo</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Create Your Own Broadcast Network With AVideo.
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      لإنشاء موقع فيديوهات
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card KB">
+              <a href="https://www.bookstackapp.com/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/bookstack.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag KB">
+                      <strong class="tag-text">KNB</strong>
+                    </div>
+                    <p class="title KB" align="left">Bookstack</p>
+                    <p class="subtitle" id="powerdby">Bookstack</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Simple and Free Wiki Software
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      موسوعه خفيفة وبسيطة
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card WaB">
+              <a href="https://wordpress.org/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/wordpress.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag WaB">
+                      <strong class="tag-text">WEB</strong>
+                    </div>
+                    <p class="title WaB" align="left">Wordpress</p>
+                    <p class="subtitle" id="powerdby">Wordpress</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      create a beautiful website, blog, or app.
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      أنشاء موقع جميل، مدونة، أو تطبيق.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card WaB">
+              <a href="https://github.com/ve3lst">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/VLS135.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag WaB">
+                      <strong class="tag-text">WEB</strong>
+                    </div>
+                    <p class="title WaB" align="left">Veelst's GH</p>
+                    <p class="subtitle" id="powerdby">GitHub</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Veelst's GitHub and stuff
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      صفحة فيّلست على الغيتهب
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card KB">
+              <a href="https://www.openstreetmap.org/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/openstreetmap.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag KB">
+                      <strong class="tag-text">KNB</strong>
+                    </div>
+                    <p class="title KB" align="left">OpenStreetMap</p>
+                    <p class="subtitle" id="powerdby">OpenStreetMap</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Maps from around the world!
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      خرائط من حول العالم
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card SaM">
+              <a href="https://lycheeorg.github.io/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/lychee.ico" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag SaM">
+                      <strong class="tag-text">IMG</strong>
+                    </div>
+                    <p class="title SaM" align="left">Lychee</p>
+                    <p class="subtitle" id="powerdby">lychee</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      grid and album based photo-management-system
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      إستديو للصور
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card SaI">
+              <a href="https://tsearch.net/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/YaCy.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag SaI">
+                      <strong class="tag-text">SRC</strong>
+                    </div>
+                    <p class="title SaI" align="left">YaCy Search</p>
+                    <p class="subtitle" id="powerdby">YaCy</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Decentralized search engine server
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      محرك بحث
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card admin">
+              <a href="https://www.webmin.com/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/webmin.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag admin">
+                      <strong class="tag-text">RDT</strong>
+                    </div>
+                    <p class="title admin" align="left">Webmin</p>
+                    <p class="subtitle" id="powerdby">Webmin</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      web-based system configuration tool for Unix-like systems
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      واجهة للتحكم بأنضمة لينكس من المتصفح
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card SaM">
+              <a href="http://mail.net">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/rcm.svg" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag SaM">
+                      <strong class="tag-text">MAL</strong>
+                    </div>
+                    <p class="title SaM" align="left">Mail</p>
+                    <p class="subtitle" id="powerdby">RoundCubeMail</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Browser-based IMAP client
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      مدير بريد إلكتروني من المتصفح
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card WaB">
+              <a href="https://icecoder.net/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/icecoder.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag WaB">
+                      <strong class="tag-text">TXT</strong>
+                    </div>
+                    <p class="title WaB" align="left">ICEcoder</p>
+                    <p class="subtitle" id="powerdby">ICEcoder</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Code editor awesomeness ...in your browser
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      محرر أكواد رائع من المتصفح مباشرة
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card SaM">
+              <a href="https://jellyfin.org/">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="applogo">
+                      <img src="media/jellyfin.png" width="77" height="77">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="tag SaM">
+                      <strong class="tag-text">MEd</strong>
+                    </div>
+                    <p class="title SaM" align="left">Jellyfin</p>
+                    <p class="subtitle" id="powerdby">Emby</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="subtitle en_desc">
+                      Media server for audio, video, books,and photos
+                  </p>
+                  <p class="subtitle ar_desc" align="right">
+                      ميدياسيرفر للصور والفيديو والصوتيات
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to the top</a>
+        </p>
+        <p>Copyright © stuff i don't understand goes here, i think?</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+    

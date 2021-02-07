@@ -1,0 +1,210 @@
+:root {
+  --KB: #BF616A;
+  --SaM: #EBCB8B;
+  --WaB: #A3BE8C;
+  --SaI: #D08770;
+  --admin: #B48EAD;
+  --bg: #1d212b;
+  --darknord: #2E3440;
+  --nord4: #D8DEE9;
+  --nord5: #E5E9F0;
+  --nord6: #ECEFF4;
+  --nord8: #88C0D0;
+}
+
+html {
+  background-color: var(--darknord);
+}
+
+.body {
+  color: red;
+  background: var(--darknord);
+  background-color: var(--darknord);
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: var(--darknord);
+}
+.navbar-brand {
+  color: var(--nord5);
+}
+
+.searchbox-input {
+  width: 220px;
+}
+
+.container-fluid{
+    min-width: 90%;
+}
+
+.cards {
+  background-color: var(--bg);
+  padding-top: 50px;
+  min-height: 100%;
+  overflow:auto;
+  padding-bottom:150px;
+}
+
+.col{
+  padding: 0em;
+}
+
+.card {
+  box-shadow: 0 0 10px black;
+  background-color: var(--darknord);
+  opacity: 100;
+  height: auto;
+  width: auto;
+  min-width: 310px;
+  max-width: auto;
+  min-height: 177px;
+  color: red;
+  margin:  5px;
+  padding: 0px;
+}
+
+.applogo {
+  bottom: 0;
+  left: 5px;
+  padding-top: 5px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.title.KB {
+  color: var(--KB); 
+}
+.title.SaM {
+  color: var(--SaM); 
+}
+.title.WaB {
+  color: var(--WaB); 
+}
+.title.SaI {
+  color: var(--SaI);
+}
+.title.admin {
+  color: var(--admin); 
+}
+.media-content {
+  /*padding-left: 15px;
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  */
+  font-size: 30px;
+  padding-top: 7px;
+  color: var(--nord6); 
+}
+.media-content #powerdby {
+  margin-top: -1.5rem;
+  font-size: 15px;
+  color: var(--nord8); 
+}
+
+.content {
+  margin-top: -10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: red; }
+
+.en_desc {
+  padding-bottom: -100px;
+  color: var(--nord4);
+  margin-bottom: 0px;
+}
+.ar_desc {
+  margin-top: 0px;
+  padding-top: -30px;
+  color: var(--nord6);
+}
+
+.tag {
+  height: 1.5em;
+  background-color: red; /* You should NOT see red color*/
+  overflow: hidden;
+  position: absolute;
+  top: 1rem;
+  right: -0.2rem;
+  width: .5em;
+  transition: all 0.2s ease-out;
+  padding: 0; 
+  font-size: 15px;
+}
+.tag .tag-text {
+  display: none; }
+}
+.tag.uesless { /*Knowledge Base and wikis */
+  background-color: var(--KB); 
+}
+.tag.KB { /*Knowledge Base and wikis */
+  background-color: var(--KB); 
+}
+.tag.SaM { /*Social networks and Media*/
+  background-color: var(--SaM); 
+}
+.tag.WaB { /*Websites and Blogs*/
+  background-color: var(--WaB); 
+}
+.tag.SaI { /*Search and Indexing*/
+  background-color: var(--SaI);
+}
+.tag.admin { /*Search and Indexing*/
+  background-color: var(--admin); 
+}
+
+.card:hover {
+  /* OLD ANIMATION
+  transform: translate(0, -1rem);
+  animation: testmaybe 0.2s forwards;
+  @keyframes testmaybe {
+  100% {transform: translate(0, -0.5rem);}
+  }
+  */
+  transform: scale(1.05);
+  z-index: 1;
+  transition-duration: 0.3s;
+  box-shadow: 0 0 15px red; 
+}
+
+.card:hover .tag {
+  width: auto;
+  color: red;
+  padding: 0 0.75em;
+}
+.card:hover .tag .tag-text {
+  display: block;
+  color: var(--darknord);
+}
+.card:hover.useless {
+  box-shadow: 0 0 25px var(--KB);
+}
+.card:hover.KB {
+  box-shadow: 0 0 25px var(--KB);
+}
+.card:hover.SaM {
+  box-shadow: 0 0 25px var(--SaM); 
+}
+.card:hover.WaB {
+  box-shadow: 0 0 25px var(--WaB); 
+}
+.card:hover.SaI {
+  box-shadow: 0 0 25px var(--SaI); 
+}
+.card:hover.admin {
+  box-shadow: 0 0 25px var(--admin); 
+}
+.footer {
+  background-color: var(--darknord);
+  position: relative;
+} 
