@@ -36,7 +36,7 @@ I just wanted to make my own dashboard for my homelab and used the things i know
 </item>
 ```
 
-- for `<tag>` use or however you like (this affect the colors of the cards):
+- for `<tag>` use the folowing categories or however you like (this affect the colors of the cards):
     - "KB" Stands for: Knowledge Base and Wikis
     - "SaM" Stands for: Social networks and media
     - "WaB" Stands for: Websites and Blogs
